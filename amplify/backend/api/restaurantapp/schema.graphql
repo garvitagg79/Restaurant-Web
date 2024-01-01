@@ -1,0 +1,14 @@
+type NewItem @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  dishName: String!
+  dishDescription: String!
+  price: Int!
+}
+
+type Connect @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String!
+  email: String!
+  phoneNumber: String!
+  query: String!
+}
